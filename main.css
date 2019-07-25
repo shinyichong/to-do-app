@@ -1,4 +1,13 @@
+h1 {
+	color: hsla(2, 96%, 91%, 1.0);
+	font-weight: bolder;
+	padding-left: 4rem;
+}
 form {
-	padding-left: 5rem;
+	padding-left: 8rem;
+}
 
+label {
+	font-size: 20px;
+	color: hsla(340, 96%, 63%, 1.0);
 }

@@ -53,7 +53,7 @@
         	//attach the li to the ul
         	toDoList.appendChild(newLi);
         	//empty the input
-        	newToDoListText.value = '';
+        	newToDoText.value = '';
 
         });
 };

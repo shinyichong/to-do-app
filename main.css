@@ -11,3 +11,7 @@ label {
 	font-size: 20px;
 	color: hsla(340, 96%, 63%, 1.0);
 }
+
+button {
+	width: 20%
+}

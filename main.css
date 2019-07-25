@@ -4,14 +4,24 @@ h1 {
 	padding-left: 4rem;
 }
 form {
-	padding-left: 8rem;
+	padding-left: 10rem;
+
 }
 
 label {
 	font-size: 20px;
 	color: hsla(340, 96%, 63%, 1.0);
+	margin: 1rem;
+}
+
+input {
+	margin: 2rem;
 }
 
 button {
-	width: 20%
+	margin: 2rem;
+}
+
+ul.toDoList {
+	padding-left: 10rem;
 }

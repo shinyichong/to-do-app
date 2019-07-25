@@ -1,5 +1,6 @@
 
 	function onReady (){
+                let toDos = [];
 		const addToDoForm = document.getElementById('addToDoForm');
 		const newToDoText = document.getElementById('newToDoText');
 		const toDoList = document.getElementById('toDoList');
@@ -11,8 +12,8 @@
         	//get the text
         	let title = newToDoText.value;
 
-                toDoList.push(title);
-                console.log(toDoList);
+                toDos.push(title);
+                console.log(toDos);
 
         	//create a new li
         	let newLi = document.createElement('li');
@@ -23,24 +24,24 @@
         	//set the input's type to checkbox
         	checkbox.type = "checkbox";
 
-                let deleteButton = document.createElement('button');
-                deleteButton.textContent = "Delete";
+                let deleteBtn = document.createElement('button');
+                deleteBtn.textContent = "Delete";
     
-                deleteButton.addEventListener('click', function(event){
+                deleteBtn.addEventListener('click', function(event){
                  let buttonLiText = this.parentElement.childNodes[0].textContent;
                  // console.log(event);
                  // this.parentElement represents the button's <li> parent
-                toDoList.removeChild(this.parentElement);
+                toDos.removeChild(this.parentElement);
       
-                toDoList.forEach(function(currentToDoList, index){
+                toDos.forEach(function(currentToDoList, index){
                  // console.log(currentToDoList, index);
                  // console.log(this);
         
                 if(currentToDo === buttonLiText){
                 // remove from array
-                 toDoList.splice(index, 1);
+                 toDos.splice(index, 1);
                 }
-                console.log(toDoList);
+                console.log(toDos);
          });
     })
 
@@ -49,11 +50,11 @@
         	//attach the checkbox to the li
         	newLi.appendChild(checkbox);
                 //attach delete button to Li
-                newLi.appendChild(deleteButton)
+                newLi.appendChild(deleteBtn);
         	//attach the li to the ul
         	toDoList.appendChild(newLi);
         	//empty the input
-        	newToDoText.value = '';
+        	newToDoText.value = "";
 
         });
 };

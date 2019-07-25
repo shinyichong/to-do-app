@@ -27,11 +27,11 @@
                 let deleteBtn = document.createElement('button');
                 deleteBtn.textContent = "Delete";
     
-                deleteBtn.addEventListener('click', function(event){
+                deleteBtn.addEventListener('click', function(event) {
                  let buttonLiText = this.parentElement.childNodes[0].textContent;
                  // console.log(event);
                  // this.parentElement represents the button's <li> parent
-                toDos.removeChild(this.parentElement);
+                toDoList.removeChild(this.parentElement);
       
                 toDos.forEach(function(currentToDoList, index){
                  // console.log(currentToDoList, index);

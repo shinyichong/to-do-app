@@ -55,6 +55,7 @@
         	toDoList.appendChild(newLi);
         	//empty the input
         	newToDoText.value = "";
+                newLi.appendChild(mdl-checkbox__input)
 
         });
 };

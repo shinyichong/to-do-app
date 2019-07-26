@@ -8,10 +8,6 @@ form {
 
 }
 
-div {
-	color: red
-}
-
 label {
 	font-size: 20px;
 	color: hsla(340, 96%, 63%, 1.0);
@@ -22,19 +18,50 @@ input {
 	margin: 2rem;
 }
 
-button {
-	margin: 2rem;
+button.mdl-button {
+	margin: 4rem;
 }
 
 label.mdl-textfield__label{
 	color: hsla(47, 100%, 50%, 0.44);
-	top: 7px
+	top: 7px;
+	
+}
+
+.mdl-textfield__label:after {
+    background-color: rgb(3,169,244);
+    bottom: 16px;
+    content: '';
+    height: 2px;
+    left:80%;
+    position: absolute;
+    transition-duration: .2s;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    visibility: hidden;
+    width: 10px;
 }
 
 input.mdl-textfield__input{
 	color: orange;
+	margin-bottom: 18px;
 
 }
+
+ul {
+	padding-left: 15rem;
+	font: helvetica;
+	color: orange;
+	font-size: 20px;
+
+}
+	
+
+
+
+
+
+
+
 
 
 

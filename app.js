@@ -37,11 +37,7 @@
                  // console.log(currentToDoList, index);
                  // console.log(this);
         
-                if(currentToDo === buttonLiText){
-                // remove from array
-                 toDos.splice(index, 1);
-                }
-                console.log(toDos);
+           
          });
     })
 
@@ -55,7 +51,7 @@
         	toDoList.appendChild(newLi);
         	//empty the input
         	newToDoText.value = "";
-                newLi.appendChild(mdl-checkbox__input)
+
 
         });
 };

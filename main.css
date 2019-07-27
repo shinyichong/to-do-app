@@ -44,7 +44,7 @@ label.mdl-textfield__label{
 input.mdl-textfield__input{
 	color: orange;
 	margin-bottom: 18px;
-
+	padding-right: 2rem;
 }
 
 ul {
@@ -52,8 +52,10 @@ ul {
 	font: helvetica;
 	color: orange;
 	font-size: 20px;
-
 }
+
+
+
 	
 
 
